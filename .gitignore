@@ -8,7 +8,6 @@ __pycache__/
 
 # Data files (generated, not needed in repo)
 bus_data.json
-route_shapes.json
 
 # OS files
 .DS_Store
