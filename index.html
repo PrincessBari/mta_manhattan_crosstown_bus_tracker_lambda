@@ -354,9 +354,12 @@
         fetch('https://73jszzptxa4llgvkerqmweem3a0osubl.lambda-url.us-east-1.on.aws/')
             .then(response => response.json())
             .then(data => {
+                // Lambda Function URL returns body as string, parse it
+                const parsedData = typeof data.body === 'string' ? JSON.parse(data.body) : data;
+                
                 clearMarkers();
-        
-                const buses = data.buses || [];
+
+                const buses = parsedData.buses || [];
                 const routeCounts = {};
         
                 buses.forEach(bus => {
