@@ -44,6 +44,25 @@
             z-index: 1;
         }
         
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            #container {
+                flex-direction: column;
+            }
+            
+            .info-panel {
+                width: 100%;
+                max-height: 40vh;
+                order: 2;
+            }
+            
+            #map {
+                height: 60vh;
+                order: 1;
+            }
+        }
+
+
         .info-panel h1 {
             font-size: 22px;
             color: #1a1a1a;
