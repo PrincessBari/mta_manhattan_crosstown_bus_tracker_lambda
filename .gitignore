@@ -1,0 +1,19 @@
+# Environment variables (API keys)
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Data files (generated, not needed in repo)
+bus_data.json
+route_shapes.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
